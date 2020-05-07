@@ -13,7 +13,8 @@ let teamTwoShootButton = document.querySelector("#teamtwo-shoot-button")
 
 //Reset Function//
 
-let resetButto = document.querySelector("#reset-button")
+let resetButton = document.querySelector("#reset-button")
+let resetNumber = document.querySelector("#num-resets")
 
 
 //team one shots and goals//
@@ -43,7 +44,7 @@ teamTwoShootButton.addEventListener("click", function() {
     let teamTwoNumShots = Number(shotsTwo.innerHTML) + 1;
     shotsTwo.innerHTML = teamTwoNumShots
 
-    teamTwoNumGoals = Number (goalsTwo.innerHTML) + 1;
+    teamTwoNumGoals = Number(goalsTwo.innerHTML) + 1;
 
     if (Math.random()>= 0.5 ) {
         goalsTwo.innerHTML = teamTwoNumGoals;
@@ -59,7 +60,10 @@ teamTwoShootButton.addEventListener("click", function() {
 
 resetButton.addEventListener("click", function() {
 
-console.log("Reset button clicked");
-
+let resetFunction = Number(resetNumber.innerHTML) + 1;
+shotsOne.innerHTML = 0;
+shotsTwo.innerHTML = 0;
+goalsOne.innerHTML = 0;
+goalsTwo.innerHTML = 0;
 
 })
