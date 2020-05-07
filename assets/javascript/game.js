@@ -60,15 +60,6 @@ teamTwoShootButton.addEventListener("click", function() {
 resetButton.addEventListener("click", function() {
 
 console.log("Reset button clicked");
-let resetFunction = Number(resetButton.innerHTML) + 1;
-
-    if {
-
-}
-
-    else {
-
-    }
 
 
 })
